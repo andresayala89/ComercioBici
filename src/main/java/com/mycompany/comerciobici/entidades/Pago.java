@@ -14,6 +14,8 @@ public class Pago {
     
     public Integer Id;
     public String  Nombre;
+    private int codigoTarjeta;
+    private int numCuota;
     
     public Pago()
     {
@@ -21,10 +23,12 @@ public class Pago {
         Nombre = "";
     }
     
-    public Pago(int ids , String nombre)
+    public Pago(int ids , String nombre, int codigoTarje, int numC)
     {
-        Id = ids;
+        Id     = ids;
         Nombre = nombre;
+        codigoTarjeta = codigoTarje;
+        numCuota = numC;
     }
 
     public Integer getId() {
@@ -41,6 +45,22 @@ public class Pago {
 
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
+    }
+    
+    public int getCodigoTarjeta() {
+        return codigoTarjeta;
+    }
+
+    public void setCodigoTarjeta(int codigoTarjeta) {
+        this.codigoTarjeta = codigoTarjeta;
+    }
+
+    public int getNumCuota() {
+        return numCuota;
+    }
+
+    public void setNumCuota(int numCuota) {
+        this.numCuota = numCuota;
     }
     
     

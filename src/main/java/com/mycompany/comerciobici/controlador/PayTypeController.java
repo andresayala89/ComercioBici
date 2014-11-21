@@ -29,7 +29,7 @@ public class PayTypeController {
     @RequestMapping(value = "/listar", method =RequestMethod.GET, produces = {MediaType.APPLICATION_JSON})
     public List<Pago> listarFormaPago(){
         ArrayList<Pago> lista=new ArrayList<Pago>();
-        lista.add(new Pago(10, "TestP"));
+        lista.add(new Pago(10, "Credito", 1, 2));
         return lista;
     }
     
